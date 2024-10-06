@@ -82,4 +82,7 @@
 
   /* transition */
   --transition-short: 100ms ease;
+
+  /* spacing */
+  --gap: 1rem;
 }
