@@ -1,0 +1,15 @@
+{
+  "name": "weatherio-starter",
+  "version": "1.0.0",
+  "description": "A brief description of what this project does and who it's for",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}

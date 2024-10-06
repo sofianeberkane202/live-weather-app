@@ -1,0 +1,39 @@
+.container {
+  max-width: 1600px;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 16px;
+}
+
+.has-state {
+  position: relative;
+  overflow: hidden;
+}
+
+.has-state:hover {
+  box-shadow: var(--shadow-1);
+}
+
+.has-state:is(:focus, :focus-visible) {
+  box-shadow: none;
+}
+
+.has-state::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: transparent;
+  border-radius: inherit;
+  transition: var(--transition-short);
+  clip-path: circle(100% at 50% 50%);
+  z-index: -1;
+}
+
+.has-state:hover::before {
+  background-color: var(--white-alpha-4);
+}
+
+.has-state:is(:focus, :focus-visible)::before {
+  background-color: var(--white-alpha-8);
+  animation: ripple 250ms ease forwards;
+}

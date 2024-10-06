@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+      - primary meta tags
+    -->
+
+    <title>weatherio</title>
+    <meta name="title" content="weatherio" />
+    <meta
+      name="description"
+      content="weatherio is a weather app made by codewithsadee"
+    />
+
+    <!-- 
+      - favicone   
+    -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+      - google font link
+    -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+      - custom css link
+    -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+      - custom js link  
+    -->
+    <script type="module" src="./assets/js/controllers/controller.js"></script>
+  </head>
+  <body>
+    <!-- 
+      - Header
+    -->
+
+    <div class="header pd-block-12">
+      <div class="container flex flex-between flex-center-y">
+        <a href="#" class="logo">
+          <img
+            src="./assets/images/logo.png"
+            width="364"
+            height="58"
+            alt="logo"
+          />
+        </a>
+
+        <div class="search-view" data-search-view>
+          <div class="search-wrapper">
+            <!-- searching -->
+            <input
+              type="search"
+              name="search"
+              class="search-field"
+              placeholder="Search city..."
+              autocomplete="off"
+              data-search-field
+            />
+
+            <span class="m-icon">search</span>
+
+            <button
+              class="icon-btn leading-icon has-state grid place-content-center"
+              aria-label="close search"
+              data-search-toggler
+            >
+              <span class="m-icon">arrow_back</span>
+            </button>
+          </div>
+
+          <div class="search-result" data-search-result>
+            <ul class="view-list" data-search-list>
+              <li class="view-item">
+                <span class="m-icon">location_on</span>
+
+                <div>
+                  <p class="item-title">London</p>
+
+                  <p class="label-2 item-subtitle">State of London, GB</p>
+                </div>
+
+                <a href="#" class="item-link has-state" data-search-toggler></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="header-actions flex flex-between flex-center-y"
+          style="--gap: 1.6rem"
+        >
+          <button
+            class="icon-btn has-state grid place-content-center"
+            aria-label="open search"
+            data-search-toggler
+          >
+            <span class="m-icon icon">search</span>
+          </button>
+
+          <a
+            href="#/current-location"
+            class="btn-primary has-state flex flex-center-y pd-inline-12"
+            style="--gap: 1.6rem"
+            data-current-location-btn
+            aria-disabled="true"
+          >
+            <span class="m-icon">my_location</span>
+
+            <span class="span">Current Location</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
