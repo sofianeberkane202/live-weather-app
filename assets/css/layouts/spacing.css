@@ -113,3 +113,15 @@
 .mg-32 {
   margin: 32px;
 }
+
+.mg-l-auto {
+  margin-inline-start: auto;
+}
+
+.mg-r-auto {
+  margin-inline-end: auto;
+}
+
+.mg-auto {
+  margin-inline: auto;
+}

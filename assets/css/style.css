@@ -58,9 +58,16 @@
   #HEADER
 \*-----------------------------------*/
 
+.header {
+  height: 80px;
+}
+
+.header .container {
+  height: 100%;
+}
+
 .search-view,
-.header .primary-btn,
-.span {
+.header .btn-primary .span {
   display: none;
 }
 
@@ -169,6 +176,54 @@
   inset: 0;
   box-shadow: none;
 }
+
+/*-----------------------------------*\
+  #MAIN
+\*-----------------------------------*/
+
+main {
+  height: calc(100vh - 80px);
+  height: calc(100svh - 80px);
+  overflow: hidden;
+}
+
+article.container {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 20px;
+  height: 100%;
+  overflow-y: auto; /* for firefox */
+  overflow-y: overlay;
+}
+
+article.container::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+article.container:is(:hover, :focus-within)::-webkit-scrollbar-thumb {
+  background-color: var(--white-alpha-8);
+}
+
+article.container::-webkit-scrollbar-button {
+  height: 10px;
+}
+
+article.container::before {
+  content: "";
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-image: var(--gradient-1);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.section:not(:last-child) {
+  margin-block-end: 16px;
+}
+
 /*-----------------------------------*\
   #CURRENT WEATHER
 \*-----------------------------------*/
@@ -181,9 +236,57 @@
   #HOURLY FORECAST
 \*-----------------------------------*/
 
+.hightlights .m-icon {
+  font-size: 3.2rem;
+}
+
+.highlight-list .title-3 {
+  color: var(--on-surface-variant);
+  margin-block-end: 20px;
+}
+
+.badg {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 2px 12px;
+  border-radius: var(--radius-pill);
+  font-weight: var(--weight-semiBold);
+  cursor: help;
+}
+
+.badg.aqi-1 {
+  background-color: var(--bg-aqi-1);
+  color: var(--on-bg-aqi-1);
+}
+
+.badg.aqi-2 {
+  background-color: var(--bg-aqi-2);
+  color: var(--on-bg-aqi-2);
+}
+
+.badg.aqi-3 {
+  background-color: var(--bg-aqi-3);
+  color: var(--on-bg-aqi-3);
+}
+
+.badg.aqi-4 {
+  background-color: var(--bg-aqi-4);
+  color: var(--on-bg-aqi-4);
+}
+
+.badg.aqi-5 {
+  background-color: var(--bg-aqi-5);
+  color: var(--on-bg-aqi-5);
+}
+
 /*-----------------------------------*\
   #FORECAST
 \*-----------------------------------*/
+
+.forecast .title-2 {
+  margin-block: 24px 12px;
+}
 
 /*-----------------------------------*\
   #LOADING

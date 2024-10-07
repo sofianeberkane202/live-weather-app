@@ -1,0 +1,91 @@
+.card {
+  background-color: var(--surface);
+  color: var(--on-surface);
+}
+
+.card-lg {
+  border-radius: var(--radius-28);
+  padding: 20px;
+}
+
+.card-sm {
+  border-radius: var(--radius-16);
+  padding: 16px;
+}
+
+.card-title {
+  margin-block-end: 12px;
+}
+
+/* .current-weather-card .wrapper{
+
+} */
+
+.current-weather-card .weather-icon {
+  margin-inline: auto;
+}
+
+.current-weather-card .body-3 {
+  text-transform: capitalize;
+}
+
+.current-weather-card .meta-list {
+  padding-block-start: 16px;
+  margin-block-start: 16px;
+  border-block-start: 1px solid var(--outline);
+}
+
+.current-weather-card .meta-item .meta-text {
+  color: var(--on-surface-variant);
+}
+
+.forecast .label-1 {
+  color: var(--on-surface-variant);
+  font-weight: var(--weight-semiBold);
+}
+
+.forecast .card-item > .label-1 {
+  width: 100%;
+  text-align: right;
+}
+
+.hightlights .card-sm {
+  background-color: var(--black-alpha-10);
+  position: relative;
+}
+
+.hightlight-card :is(.wrapper, .card-list, .card-item) {
+  display: flex;
+  align-items: center;
+}
+
+.hightlight-card .wrapper {
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.hightlight-card .card-list {
+  flex-wrap: wrap;
+  flex-grow: 1;
+  row-gap: 8px;
+}
+
+.hightlight-card .card-item {
+  width: 50%;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+.hightlight-card .label-1 {
+  color: var(--on-surface-variant);
+}
+
+.hightlight-card.two .card-item {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+
+.hightlight-card.two .label-1 {
+  margin-block-end: 4px;
+}
