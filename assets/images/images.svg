@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="icon01d" viewBox="0 0 64 64">
+    <image href="./weather_icons/01d.png" width="64" height="64"/>
+  </symbol>
+  <symbol id="icon01n" viewBox="0 0 64 64">
+    <image href="./weather_icons/01n.png" width="64" height="64"/>
+  </symbol>
+
+  <symbol id="icon02n" viewBox="0 0 64 64">
+    <image href="./weather_icons/02n.png" width="64" height="64"/>
+  </symbol>
+
+  <symbol id="icon02d" viewBox="0 0 64 64">
+    <image href="./weather_icons/02d.png" width="64" height="64"/>
+  </symbol>
+  <symbol id="icon03d" viewBox="0 0 64 64">
+    <image href="./weather_icons/03d.png" width="64" height="64"/>
+  </symbol>
+
+  <symbol id="icon03n" viewBox="0 0 64 64">
+    <image href="./weather_icons/03n.png" width="64" height="64"/>
+  </symbol>
+  <symbol id="icon04d" viewBox="0 0 64 64">
+    <image href="./weather_icons/04d.png" width="64" height="64"/>
+  </symbol>
+
+  <symbol id="icon04n" viewBox="0 0 64 64">
+    <image href="./weather_icons/04n.png" width="64" height="64"/>
+  </symbol>
+  <symbol id="icon09d" viewBox="0 0 64 64">
+    <image href="./weather_icons/09d.png" width="64" height="64"/>
+  </symbol>
+
+  <symbol id="icon10d" viewBox="0 0 64 64">
+    <image href="./weather_icons/10d.png" width="64" height="64"/>
+  </symbol>
+  <symbol id="icon10n" viewBox="0 0 64 64">
+    <image href="./weather_icons/10n.png" width="64" height="64"/>
+  </symbol>
+
+  <symbol id="icon11d" viewBox="0 0 64 64">
+    <image href="./weather_icons/11d.png" width="64" height="64"/>
+  </symbol>
+  <symbol id="icon11n" viewBox="0 0 64 64">
+    <image href="./weather_icons/11n.png" width="64" height="64"/>
+  </symbol>
+
+  <symbol id="icon13d" viewBox="0 0 64 64">
+    <image href="./weather_icons/13d.png" width="64" height="64"/>
+  </symbol>
+  <symbol id="icon13n" viewBox="0 0 64 64">
+    <image href="./weather_icons/13n.png" width="64" height="64"/>
+  </symbol>
+
+  <symbol id="icon50d" viewBox="0 0 64 64">
+    <image href="./weather_icons/50d.png" width="64" height="64"/>
+  </symbol>
+  <symbol id="icon50n" viewBox="0 0 64 64">
+    <image href="./weather_icons/50n.png" width="64" height="64"/>
+  </symbol>
+
+  <symbol id="icondirection" viewBox="0 0 64 64">
+    <image href="./weather_icons/direction.png" width="64" height="64"/>
+  </symbol>
+    <!-- Add more icons as needed -->
+</svg>

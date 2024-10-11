@@ -37,3 +37,7 @@
   background-color: var(--white-alpha-8);
   animation: ripple 250ms ease forwards;
 }
+
+.section {
+  margin-block-end: 12px;
+}
