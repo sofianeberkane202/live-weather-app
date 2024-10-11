@@ -10,6 +10,8 @@ export const fetchData = async function () {
   try {
     await getURLs();
 
+    console.log(state.weatherURLs);
+
     const promises = Array.from(
       state.weatherURLs.entries(),
       async ([typeData, url]) => {
@@ -76,5 +78,3 @@ export const fetchDataPlaces = async function (place) {
     console.log(error);
   }
 };
-
-fetchDataPlaces("tazmalt");

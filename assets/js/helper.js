@@ -13,6 +13,7 @@ export const getJsonData = async function (url) {
 
 export const generateURL = function (typeData) {
   const query = window.location.search.slice(1);
+  console.log("Q", query);
   return `${link}${typeData}?${query}&units=metric&appid=${api_key}`;
 };
 
